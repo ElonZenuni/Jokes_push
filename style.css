@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #5a4dd1;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-message {
+    background-color: white;
+    /* default background */
+    color: black;
+    /* default text */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hidden-message.revealed {
+    background-color: yellow;
+    /* change this to any color you want */
+    color: darkblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+}
