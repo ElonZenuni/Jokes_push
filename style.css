@@ -1,11 +1,16 @@
 body {
     margin: 0;
     height: 100vh;
-    background-color: #f7f9fc;
+    background: linear-gradient(135deg, #2e3440, #3b4252);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d8dee9;
+}
+
+.content {
+    text-align: center;
 }
 
 .button-container {
@@ -17,17 +22,17 @@ body {
 button {
     padding: 12px 24px;
     font-size: 18px;
-    background-color: #6c5ce7;
-    color: white;
+    background-color: #5e81ac;
+    color: #eceff4;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #5a4dd1;
+    background-color: #81a1c1;
     transform: scale(1.05);
 }
 
@@ -36,26 +41,36 @@ button:hover {
 }
 
 .hidden-message {
-    background-color: white;
-    /* default background */
-    color: black;
-    /* default text */
+    background-color: #434c5e;
+    color: #eceff4;
+    padding: 10px;
+    border-radius: 6px;
     transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hidden-message.revealed {
-    background-color: yellow;
-    /* change this to any color you want */
-    color: darkblue;
-}
-
-.hidden {
-    display: none;
+    background-color: #4c566a;
+    color: #88c0d0;
 }
 
 .main-heading {
     font-size: 2.5rem;
-    color: black;
+    color: #d8dee9;
     margin-bottom: 30px;
-    text-align: center;
+}
+
+#revealAll {
+    margin-top: 40px;
+    /* pushes it downward */
+    font-size: 14px;
+    /* makes text smaller */
+    padding: 8px 16px;
+    /* smaller padding */
+    align-self: center;
+    /* if it's inside a flex container */
+    background-color: #a3be8c;
+    /* Light green */
+    color: #2e3440;
+    /* Dark text for contrast */
 }
