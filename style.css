@@ -73,4 +73,22 @@ button:hover {
     /* Light green */
     color: #2e3440;
     /* Dark text for contrast */
+    font-weight: bold;
+}
+
+#randomID {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    /* pushes it downward */
+    font-size: 14px;
+    /* makes text smaller */
+    padding: 8px 16px;
+    /* smaller padding */
+    align-self: center;
+    /* if it's inside a flex container */
+    background-color: pink;
+    /* Light green */
+    color: #2e3440;
+    /* Dark text for contrast */
+    font-weight: bold;
 }

@@ -11,6 +11,31 @@ buttonContainer.addEventListener("click", toggle);
 function toggle(event) {
     const clicked = event.target;
 
+
+
+
+    // --------------    RANDOM BUTTON  ------------------
+    if (clicked.id === 'randomID') {
+        // Hide all messages
+        allMessages.forEach(msg => msg.classList.add('hidden'));
+
+        // Pick a random message index
+        const randomIndex = Math.floor(Math.random() * allMessages.length);
+
+        // Show only the random message
+        allMessages[randomIndex].classList.remove('hidden');
+
+        // Since only one is shown, set allRevealed to false
+        allRevealed = false;
+
+        // Update the Reveal All button text
+        toggleAllBtn.textContent = 'Reveal All';
+    }
+
+
+
+
+    // --------------    REVEAL ALL BUTTON  ------------------
     if (clicked.id === 'revealAll') {
         allRevealed = !allRevealed;
 
@@ -23,6 +48,7 @@ function toggle(event) {
 
 
 
+    //      ----------------- INDIVIDUAL BUTTONS -------------------
 
 
     // Only run if a joke button was clicked
